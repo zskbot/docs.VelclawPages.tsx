@@ -1,9 +1,15 @@
 import Quickstart from './pages/Quickstart';
+import DocSection from './pages/DocSection';
 
-// A router (React Router, TanStack Router...) can be dropped in here later
-// to switch between pages such as /workspace, /agents, /security — each
-// page would follow the same pattern as Quickstart.tsx: read its content
-// from a JSON file in /content, render it with the shared components.
 export default function App() {
-  return <Quickstart />;
+  const getSection = () => {
+    const hash = window.location.hash.replace(/^#\/?/, '');
+    if (hash) return hash;
+    const path = window.location.pathname.replace(/\/+$/, '').split('/').pop() || '';
+    return path === 'quickstart' || path === 'docs.VelclawPages.tsx' ? 'quickstart' : 'index';
+  };
+
+  const section = getSection();
+  if (section === 'quickstart') return <Quickstart />;
+  return <DocSection id={section} />;
 }
