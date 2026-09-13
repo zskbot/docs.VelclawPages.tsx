@@ -5,7 +5,8 @@ export type IconName =
   | 'Bot'
   | 'Cpu'
   | 'GitBranch'
-  | 'ShieldCheck';
+  | 'ShieldCheck'
+  | 'Terminal';
 
 export interface NavItem {
   id: string;
