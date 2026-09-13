@@ -13,6 +13,7 @@
       "items": [
         { "id": "workspace", "label": "Không gian làm việc", "icon": "Boxes", "href": "#workspace" },
         { "id": "agents", "label": "Agents", "icon": "Bot", "href": "#agents" },
+        { "id": "agent-ecosystem", "label": "Agent Ecosystem", "icon": "Bot", "href": "#agent-ecosystem" },
         { "id": "build-runtime", "label": "Build & Runtime", "icon": "Cpu", "href": "#build-runtime" }
       ]
     },
