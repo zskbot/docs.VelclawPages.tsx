@@ -1,30 +1,22 @@
 {
   "groups": [
-    {
-      "label": "Bắt đầu",
-      "items": [
-        { "id": "index", "label": "Tổng quan", "icon": "BookOpen", "href": "#index" },
-        { "id": "quickstart", "label": "Quickstart", "icon": "Rocket", "href": "#quickstart" },
-        { "id": "api-keys", "label": "API Keys", "icon": "KeyRound", "href": "#api-keys" },
-        { "id": "deploy-cli", "label": "Deploy CLI", "icon": "Terminal", "href": "#deploy-cli" }
-      ]
-    },
-    {
-      "label": "Nền tảng",
-      "items": [
-        { "id": "workspace", "label": "Không gian làm việc", "icon": "Boxes", "href": "#workspace" },
-        { "id": "agents", "label": "Agents", "icon": "Bot", "href": "#agents" },
-        { "id": "agent-ecosystem", "label": "Agent Ecosystem", "icon": "Bot", "href": "#agent-ecosystem" },
-        { "id": "build-runtime", "label": "Build & Runtime", "icon": "Cpu", "href": "#build-runtime" }
-      ]
-    },
-    {
-      "label": "Tích hợp",
-      "items": [
-        { "id": "deploy-api", "label": "Deploy API", "icon": "Terminal", "href": "#deploy-api" },
-        { "id": "github-delivery", "label": "GitHub Delivery", "icon": "GitBranch", "href": "#github-delivery" },
-        { "id": "security", "label": "Bảo mật", "icon": "ShieldCheck", "href": "#security" }
-      ]
-    }
+    {"label":"Bắt đầu","items":[
+      {"id":"index","label":"Tổng quan","icon":"BookOpen","href":"#index"},
+      {"id":"quickstart","label":"Quickstart","icon":"Rocket","href":"#quickstart"},
+      {"id":"api-keys","label":"API Keys","icon":"KeyRound","href":"#api-keys"},
+      {"id":"deploy-cli","label":"Deploy CLI","icon":"Terminal","href":"#deploy-cli"}
+    ]},
+    {"label":"Nền tảng","items":[
+      {"id":"workspace","label":"Không gian làm việc","icon":"Boxes","href":"#workspace"},
+      {"id":"agents","label":"Agents","icon":"Bot","href":"#agents"},
+      {"id":"agent-ecosystem","label":"Agent Ecosystem","icon":"Bot","href":"#agent-ecosystem"},
+      {"id":"plugins","label":"Plugin Store","icon":"Store","href":"#plugins"},
+      {"id":"build-runtime","label":"Build & Runtime","icon":"Cpu","href":"#build-runtime"}
+    ]},
+    {"label":"Tích hợp","items":[
+      {"id":"deploy-api","label":"Deploy API","icon":"Terminal","href":"#deploy-api"},
+      {"id":"github-delivery","label":"GitHub Delivery","icon":"GitBranch","href":"#github-delivery"},
+      {"id":"security","label":"Bảo mật","icon":"ShieldCheck","href":"#security"}
+    ]}
   ]
 }
