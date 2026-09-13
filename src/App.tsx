@@ -3,6 +3,7 @@ import Quickstart from './pages/Quickstart';
 import DeployAPI from './pages/DeployAPI';
 import DeployCLI from './pages/DeployCLI';
 import AgentEcosystem from './pages/AgentEcosystem';
+import ApiKeys from './pages/ApiKeys';
 import DocSection from './pages/DocSection';
 
 function currentSection() {
@@ -22,6 +23,7 @@ export default function App() {
   }, []);
 
   if (section === 'quickstart') return <Quickstart />;
+  if (section === 'api-keys') return <ApiKeys />;
   if (section === 'deploy-cli') return <DeployCLI />;
   if (section === 'deploy-api') return <DeployAPI />;
   if (section === 'agent-ecosystem') return <AgentEcosystem />;
