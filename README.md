@@ -1,3 +1,4 @@
+   @VelClawPages.tsx
 # Velclaw Project Context
 
 > Canonical project reference for future implementation work. Update this document when a project-level fact changes.
