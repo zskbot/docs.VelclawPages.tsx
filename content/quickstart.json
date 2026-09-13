@@ -38,7 +38,7 @@
       "id": "xem-lai",
       "num": "5",
       "title": "Xem lại và merge",
-      "body": "Agent mở pull request kèm mô tả thay đổi. Gito kiểm tra chất lượng và bảo mật trước khi bạn merge, không có bước nào tự động bỏ qua review.",
+      "body": "Agent mở pull request kèm mô tả thay đổi. CI kiểm tra chất lượng trước khi bạn merge; review vẫn là bước kiểm soát của người dùng.",
       "code": null
     }
   ],
@@ -51,8 +51,8 @@
     { "id": "buoc-tiep-theo", "label": "Bước tiếp theo" }
   ],
   "nextCards": [
-    { "icon": "Boxes", "title": "Không gian làm việc", "desc": "Tìm hiểu cách worktree cô lập bảo vệ mã nguồn của bạn.", "href": "/workspace" },
-    { "icon": "Bot", "title": "Agents", "desc": "Chọn giữa model cloud hoặc chạy Ollama cục bộ.", "href": "/agents" },
-    { "icon": "ShieldCheck", "title": "Bảo mật", "desc": "Cách Velclaw giới hạn quyền truy cập và bảo vệ secrets.", "href": "/security" }
+    { "icon": "Boxes", "title": "Không gian làm việc", "desc": "Tìm hiểu cách workspace và worktree cô lập tổ chức tác vụ.", "href": "#workspace" },
+    { "icon": "Bot", "title": "Agents", "desc": "Tìm hiểu kiến trúc agent, model và tool execution trong Velclaw.", "href": "#agents" },
+    { "icon": "ShieldCheck", "title": "Bảo mật", "desc": "Cách Velclaw quản lý OAuth, secrets và quyền truy cập.", "href": "#security" }
   ]
 }
