@@ -4,7 +4,8 @@
       "label": "Bắt đầu",
       "items": [
         { "id": "index", "label": "Tổng quan", "icon": "BookOpen", "href": "#index" },
-        { "id": "quickstart", "label": "Quickstart", "icon": "Rocket", "href": "#quickstart" }
+        { "id": "quickstart", "label": "Quickstart", "icon": "Rocket", "href": "#quickstart" },
+        { "id": "deploy-cli", "label": "Deploy CLI", "icon": "Terminal", "href": "#deploy-cli" }
       ]
     },
     {
