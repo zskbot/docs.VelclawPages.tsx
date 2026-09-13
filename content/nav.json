@@ -19,6 +19,7 @@
     {
       "label": "Tích hợp",
       "items": [
+        { "id": "deploy-api", "label": "Deploy API", "icon": "Terminal", "href": "#deploy-api" },
         { "id": "github-delivery", "label": "GitHub Delivery", "icon": "GitBranch", "href": "#github-delivery" },
         { "id": "security", "label": "Bảo mật", "icon": "ShieldCheck", "href": "#security" }
       ]
