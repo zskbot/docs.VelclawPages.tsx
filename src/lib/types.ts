@@ -6,7 +6,8 @@ export type IconName =
   | 'Cpu'
   | 'GitBranch'
   | 'ShieldCheck'
-  | 'Terminal';
+  | 'Terminal'
+  | 'KeyRound';
 
 export interface NavItem {
   id: string;
