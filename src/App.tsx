@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Quickstart from './pages/Quickstart';
+import DeployCLI from './pages/DeployCLI';
 import DocSection from './pages/DocSection';
 
 function currentSection() {
@@ -19,5 +20,6 @@ export default function App() {
   }, []);
 
   if (section === 'quickstart') return <Quickstart />;
+  if (section === 'deploy-cli') return <DeployCLI />;
   return <DocSection id={section} />;
 }
