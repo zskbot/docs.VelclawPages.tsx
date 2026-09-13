@@ -1,4 +1,4 @@
-import { BookOpen, Rocket, Boxes, Bot, Cpu, GitBranch, ShieldCheck, LucideIcon } from 'lucide-react';
+import { BookOpen, Rocket, Boxes, Bot, Cpu, GitBranch, ShieldCheck, Terminal, LucideIcon } from 'lucide-react';
 import { IconName } from './types';
 
 export const ICON_MAP: Record<IconName, LucideIcon> = {
@@ -9,4 +9,5 @@ export const ICON_MAP: Record<IconName, LucideIcon> = {
   Cpu,
   GitBranch,
   ShieldCheck,
+  Terminal,
 };
