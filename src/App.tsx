@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Quickstart from './pages/Quickstart';
 import DeployAPI from './pages/DeployAPI';
 import DeployCLI from './pages/DeployCLI';
+import AgentEcosystem from './pages/AgentEcosystem';
 import DocSection from './pages/DocSection';
 
 function currentSection() {
@@ -23,5 +24,6 @@ export default function App() {
   if (section === 'quickstart') return <Quickstart />;
   if (section === 'deploy-cli') return <DeployCLI />;
   if (section === 'deploy-api') return <DeployAPI />;
+  if (section === 'agent-ecosystem') return <AgentEcosystem />;
   return <DocSection id={section} />;
 }
