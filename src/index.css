@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #ef4444;
+    outline-offset: 2px;
+  }
+}
+
+@keyframes vc-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.vc-fade {
+  animation: vc-fade 200ms ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .vc-fade {
+    animation: none;
+  }
+}
+
+@keyframes vc-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.vc-cursor {
+  animation: vc-blink 1s steps(1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .vc-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}

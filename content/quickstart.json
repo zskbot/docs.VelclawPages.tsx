@@ -1,0 +1,58 @@
+{
+  "activeNavId": "quickstart",
+  "breadcrumb": ["Tài liệu", "Bắt đầu", "Quickstart"],
+  "eyebrow": "5 phút để hoàn thành",
+  "title": "Quickstart",
+  "description": "Cài đặt CLI, kết nối một kho mã nguồn, và để agent đầu tiên mở pull request của bạn.",
+  "requirement": "Node.js 18 trở lên, và quyền admin trên kho mã nguồn bạn muốn kết nối.",
+  "steps": [
+    {
+      "id": "cai-dat",
+      "num": "1",
+      "title": "Cài đặt CLI",
+      "body": "Cài Velclaw CLI toàn cục bằng npm. Yêu cầu Node.js 18 trở lên.",
+      "code": "npm install -g velclaw"
+    },
+    {
+      "id": "xac-thuc",
+      "num": "2",
+      "title": "Xác thực tài khoản",
+      "body": "Đăng nhập bằng tài khoản Git provider của bạn. Lệnh này sẽ mở trình duyệt để xác thực.",
+      "code": "velclaw login"
+    },
+    {
+      "id": "ket-noi",
+      "num": "3",
+      "title": "Kết nối kho mã nguồn",
+      "body": "Trỏ Velclaw tới kho mã nguồn bạn muốn agent làm việc cùng.",
+      "code": "velclaw connect github.com/your-org/your-repo"
+    },
+    {
+      "id": "tac-vu-dau-tien",
+      "num": "4",
+      "title": "Tạo tác vụ đầu tiên",
+      "body": "Mô tả thay đổi bạn muốn bằng ngôn ngữ tự nhiên, agent sẽ chạy trong một worktree cô lập.",
+      "code": "velclaw task create \"Sửa lỗi xác thực JWT\""
+    },
+    {
+      "id": "xem-lai",
+      "num": "5",
+      "title": "Xem lại và merge",
+      "body": "Agent mở pull request kèm mô tả thay đổi. Gito kiểm tra chất lượng và bảo mật trước khi bạn merge, không có bước nào tự động bỏ qua review.",
+      "code": null
+    }
+  ],
+  "toc": [
+    { "id": "cai-dat", "label": "Cài đặt CLI" },
+    { "id": "xac-thuc", "label": "Xác thực tài khoản" },
+    { "id": "ket-noi", "label": "Kết nối kho mã nguồn" },
+    { "id": "tac-vu-dau-tien", "label": "Tạo tác vụ đầu tiên" },
+    { "id": "xem-lai", "label": "Xem lại và merge" },
+    { "id": "buoc-tiep-theo", "label": "Bước tiếp theo" }
+  ],
+  "nextCards": [
+    { "icon": "Boxes", "title": "Không gian làm việc", "desc": "Tìm hiểu cách worktree cô lập bảo vệ mã nguồn của bạn.", "href": "/workspace" },
+    { "icon": "Bot", "title": "Agents", "desc": "Chọn giữa model cloud hoặc chạy Ollama cục bộ.", "href": "/agents" },
+    { "icon": "ShieldCheck", "title": "Bảo mật", "desc": "Cách Velclaw giới hạn quyền truy cập và bảo vệ secrets.", "href": "/security" }
+  ]
+}
