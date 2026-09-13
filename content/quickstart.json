@@ -1,4 +1,58 @@
 {
-  "content": "{\n  \"activeNavId\": \"quickstart\",\n  \"breadcrumb\": [\"Tài liệu\", \"Bắt đầu\", \"Quickstart\"],\n  \"eyebrow\": \"5 phút để bắt đầu\",\n  \"title\": \"Quickstart\",\n  \"description\": \"Cài Velclaw Deploy CLI, cấu hình endpoint và token, sau đó queue một deployment từ GitHub.\",\n  \"requirement\": \"Node.js 18 trở lên và một GitHub repository có thể truy cập bởi deployment worker.\",\n  \"steps\": [\n    {\n      \"id\": \"cai-dat\",\n      \"num\": \"1\",\n      \"title\": \"Cài đặt Deploy CLI\",\n      \"body\": \"Package Velclaw khai báo binary chính thức là velclaw-deploy.\",\n      \"code\": \"npm install -g velclaw\\nvelclaw-deploy\"\n    },\n    {\n      \"id\": \"cau-hinh-endpoint\",\n      \"num\": \"2\",\n      \"title\": \"Cấu hình endpoint và token\",\n      \"body\": \"CLI gửi request với Bearer token. Có thể override API base bằng VELCLAW_DEPLOY_API; token nằm trong VELCLAW_DEPLOY_API_TOKEN.\",\n      \"code\": \"export VELCLAW_DEPLOY_API=\\\"https://your-deploy-host.example\\\"\\nexport VELCLAW_DEPLOY_API_TOKEN=\\\"<token>\\\"\"\n    },\n    {\n      \"id\": \"queue-deployment\",\n      \"num\": \"3\",\n      \"title\": \"Queue deployment\",\n      \"body\": \"Gửi URL repository GitHub và branch. Nếu không chỉ định branch, CLI dùng main.\",\n      \"code\": \"velclaw-deploy deploy https://github.com/Velclaw/Velclaw.git main\"\n    },\n    {\n      \"id\": \"theo-doi\",\n      \"num\": \"4\",\n      \"title\": \"Theo dõi deployment\",\n      \"body\": \"Dùng list để xem lịch sử và inspect để xem chi tiết một deployment. Logs và status được worker/control plane cập nhật.\",\n      \"code\": \"velclaw-deploy list\\nvelclaw-deploy inspect <deployment-id>\"\n    },\n    {\n      \"id\": \"rollback\",\n      \"num\": \"5\",\n      \"title\": \"Rollback khi cần\",\n      \"body\": \"Khi release mới không đạt yêu cầu, rollback yêu cầu đưa deployment về release ready trước đó.\",\n      \"code\": \"velclaw-deploy rollback <deployment-id>\"\n    }\n  ],\n  \"toc\": [\n    { \"id\": \"cai-dat\", \"label\": \"Cài đặt Deploy CLI\" },\n    { \"id\": \"cau-hinh-endpoint\", \"label\": \"Cấu hình endpoint\" },\n    { \"id\": \"queue-deployment\", \"label\": \"Queue deployment\" },\n    { \"id\": \"theo-doi\", \"label\": \"Theo dõi deployment\" },\n    { \"id\": \"rollback\", \"label\": \"Rollback\" },\n    { \"id\": \"buoc-tiep-theo\", \"label\": \"Bước tiếp theo\" }\n  ],\n  \"nextCards\": [\n    { \"icon\": \"Boxes\", \"title\": \"Không gian làm việc\", \"desc\": \"Tìm hiểu cách workspace và worktree cô lập tổ chức tác vụ.\", \"href\": \"#workspace\" },\n    { \"icon\": \"Bot\", \"title\": \"Agents\", \"desc\": \"Tìm hiểu context, execution và review của agent.\", \"href\": \"#agents\" },\n    { \"icon\": \"Cpu\", \"title\": \"Build & Runtime\", \"desc\": \"Hiểu queue, worker, build validation và runtime publication.\", \"href\": \"#build-runtime\" }\n  ]\n}\n",
-  "encoding": "utf-8"
+  "activeNavId": "quickstart",
+  "breadcrumb": ["Tài liệu", "Bắt đầu", "Quickstart"],
+  "eyebrow": "5 phút để bắt đầu",
+  "title": "Quickstart",
+  "description": "Cài Velclaw Deploy CLI, cấu hình endpoint và token, sau đó queue một deployment từ GitHub.",
+  "requirement": "Node.js 18 trở lên và một GitHub repository có thể truy cập bởi deployment worker.",
+  "steps": [
+    {
+      "id": "cai-dat",
+      "num": "1",
+      "title": "Cài đặt Deploy CLI",
+      "body": "Package Velclaw khai báo binary chính thức là velclaw-deploy.",
+      "code": "npm install -g velclaw\nvelclaw-deploy"
+    },
+    {
+      "id": "cau-hinh-endpoint",
+      "num": "2",
+      "title": "Cấu hình endpoint và token",
+      "body": "CLI gửi request với Bearer token. Có thể override API base bằng VELCLAW_DEPLOY_API; token nằm trong VELCLAW_DEPLOY_API_TOKEN.",
+      "code": "export VELCLAW_DEPLOY_API=\"https://your-deploy-host.example\"\nexport VELCLAW_DEPLOY_API_TOKEN=\"<token>\""
+    },
+    {
+      "id": "queue-deployment",
+      "num": "3",
+      "title": "Queue deployment",
+      "body": "Gửi URL repository GitHub và branch. Nếu không chỉ định branch, CLI dùng main.",
+      "code": "velclaw-deploy deploy https://github.com/Velclaw/Velclaw.git main"
+    },
+    {
+      "id": "theo-doi",
+      "num": "4",
+      "title": "Theo dõi deployment",
+      "body": "Dùng list để xem lịch sử và inspect để xem chi tiết một deployment. Logs và status được worker/control plane cập nhật.",
+      "code": "velclaw-deploy list\nvelclaw-deploy inspect <deployment-id>"
+    },
+    {
+      "id": "rollback",
+      "num": "5",
+      "title": "Rollback khi cần",
+      "body": "Khi release mới không đạt yêu cầu, rollback yêu cầu đưa deployment về release ready trước đó.",
+      "code": "velclaw-deploy rollback <deployment-id>"
+    }
+  ],
+  "toc": [
+    { "id": "cai-dat", "label": "Cài đặt Deploy CLI" },
+    { "id": "cau-hinh-endpoint", "label": "Cấu hình endpoint" },
+    { "id": "queue-deployment", "label": "Queue deployment" },
+    { "id": "theo-doi", "label": "Theo dõi deployment" },
+    { "id": "rollback", "label": "Rollback" },
+    { "id": "buoc-tiep-theo", "label": "Bước tiếp theo" }
+  ],
+  "nextCards": [
+    { "icon": "Boxes", "title": "Không gian làm việc", "desc": "Tìm hiểu cách workspace và worktree cô lập tổ chức tác vụ.", "href": "#workspace" },
+    { "icon": "Bot", "title": "Agents", "desc": "Tìm hiểu context, execution và review của agent.", "href": "#agents" },
+    { "icon": "Cpu", "title": "Build & Runtime", "desc": "Hiểu queue, worker, build validation và runtime publication.", "href": "#build-runtime" }
+  ]
 }
