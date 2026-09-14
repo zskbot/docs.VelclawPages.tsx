@@ -8,7 +8,7 @@ repository:
   description: description of repo
 
   # A URL with more information about the repository
-  homepage: https://velclaw.cfd/repo-docs-velclaw
+  homepage: https://velclaw.cfd/zskbot.github.io/docs.velclaw.ai
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
